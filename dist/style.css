@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,900;1,100;1,300&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FF4830;
+  min-height: 100vh;
+}
+body .wrap.active .size-input {
+  display: flex !important;
+}
+body .wrap.active button {
+  display: block;
+}
+body .wrap {
+  transition: all 0.4s ease;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  width: 450px;
+  height: auto;
+  padding-bottom: 25px;
+  border-radius: 4px;
+}
+body .wrap .btnresize {
+  padding: 5px;
+  height: 60px;
+  border: none;
+  background-color: #FF4830;
+  color: white;
+  width: 90%;
+  margin: 10px auto;
+  cursor: pointer;
+  font-size: 22px;
+}
+body .wrap .input-file {
+  cursor: pointer;
+  margin: 20px 0;
+  margin-bottom: 10px;
+  width: 90%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed #FF4830;
+  border-radius: 3px;
+}
+body .wrap .input-file span {
+  font-size: 90px;
+  color: #FF4830;
+}
+body .wrap .input-file.active {
+  border: none;
+}
+body .wrap .input-file.active img {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+body .wrap .input-file.active span {
+  display: none;
+}
+body .wrap button {
+  display: none;
+}
+body .wrap .size-input {
+  display: none;
+  flex-direction: column;
+  width: 90%;
+}
+body .wrap .size-input .checkboxs {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+body .wrap .size-input .checkboxs label {
+  font-size: 18px;
+}
+body .wrap .size-input .checkboxs input {
+  width: 15px;
+  height: 15px;
+  color: #FF4830;
+  background-color: #FF4830;
+}
+body .wrap .size-input .width, body .wrap .size-input .height {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+body .wrap .size-input .width input, body .wrap .size-input .height input {
+  height: 55px;
+  width: 100%;
+  outline: none;
+  border: 1.5px solid rgb(189, 189, 189);
+  padding: 8px;
+  font-size: 22px;
+}
+body .wrap .size-input .width input:focus, body .wrap .size-input .height input:focus {
+  border-color: #FF4830;
+}
+body .wrap .size-input .width label, body .wrap .size-input .height label {
+  font-weight: 400;
+  margin: 8px 0;
+  font-size: 17px;
+}/*# sourceMappingURL=style.css.map */
